@@ -11,7 +11,7 @@
     "e2e": "ng e2e",
     "remove-demo-unix": "rm -rf projects && rm angular.json && mv angular-clean.json angular.json",
     "remove-demo-windows": "rmdir /s /q projects && del angular.json && ren angular-clean.json angular.json",
-    "postinstall": "ng build --aot -prod"
+    "heroku-postbuild": "ng build --prod"
   },
   "private": true,
   "dependencies": {
