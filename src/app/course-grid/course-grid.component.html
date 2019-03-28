@@ -1,0 +1,52 @@
+<nav class="navbar">
+  <span class="navbar-brand mb-0 h3">WhiteBoard - Course Grid</span>
+  <i class="fas fa-arrow-circle-left fa-3x" id="arrow"></i>
+</nav>
+
+<div class="card-deck">
+
+
+  <mdb-card  class="card"
+            *ngFor="let course of courses"
+  >
+    <!--<a (click)="navigateToCourse(course.id)">-->
+    <a routerLink="/course/{{course.id}}">
+    <!--Card image-->
+    <div class="view view-cascade overlay waves-light unique-color-dark" mdbWavesEffect>
+      <mdb-card-img src="https://i.imgur.com/RnXeXnJ.jpg"></mdb-card-img>
+      <a>
+        <div class="mask rgba-white-slight"></div>
+      </a>
+    </div>
+    <!--/Card image-->
+
+
+    <!-- Card content -->
+    <div class="card-body text-center  mdb-color darken-3" id="card">
+
+      <!--Title-->
+      <mdb-card-title>
+        <h3>
+          <strong>{{course.title}}</strong>
+        </h3>
+      </mdb-card-title>
+    </div>
+    </a>
+
+  </mdb-card>
+
+
+</div>
+
+
+
+<!--<div id="card" class="card text-center">-->
+<!--<img class="card-img-top"-->
+<!--src="https://picsum.photos/300/300">-->
+<!--&lt;!&ndash;style="width:100%;max-width:300px"&ndash;&gt;-->
+
+<!--<div class="card-block">-->
+<!--<h2 id="title" class="card-title">{{course.title}}</h2>-->
+<!--</div>-->
+<!--</div>-->
+

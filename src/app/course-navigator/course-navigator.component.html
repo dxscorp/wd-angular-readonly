@@ -1,0 +1,41 @@
+<nav class="navbar">
+  <span class="navbar-brand mb-0 h1 pull-right">WhiteBoard - Course Navigator -
+    {{course.title}}</span>
+  <a routerLink="/course"><i class="fas fa-arrow-circle-left fa-3x" id="arrow"></i></a>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+
+    <!--// LEFT SIDE OF THE NAVIGATOR (MODULES)-->
+
+    <div class="col-4">
+
+      <app-module-list>
+      </app-module-list>
+
+    </div>
+
+
+    <!--// RIGHT SIDE OF THE NAVIGATOR (LESSONS AND TOPICS)-->
+
+    <div class="col-8">
+
+      <div class="row">
+        <app-lesson-tabs>
+        </app-lesson-tabs>
+      </div>
+
+      <div class="row">
+        <app-topic-pills>
+        </app-topic-pills>
+      </div>
+
+      <div class="row">
+        <app-widget-list>
+        </app-widget-list>
+      </div>
+
+
+    </div>
+  </div>
+</div>

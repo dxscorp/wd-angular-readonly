@@ -1,0 +1,152 @@
+<div class="container-fluid">
+
+    <span
+      *ngFor="let widget of widgets"
+      class="row wbdv">
+
+      <div class="container" id="widgetCard"
+           *ngIf="isParagraphWidget(widget)">
+        <div class="row" id="inner">
+                  <h3>Paragraph Widget</h3>
+        </div>
+        <div class="row" id="inner">
+          <p>
+          {{widget.text}}
+        </p>
+        </div>
+
+      </div>
+
+
+
+
+
+      <div class="container" id="widgetCard"
+           *ngIf="isLinkWidget(widget)">
+        <div class="row" id="inner">
+                  <h3>Link Widget</h3>
+        </div>
+        <div class="row" id="inner">
+        <a
+          href="{{widget.text}}">
+          {{widget.text}}
+        </a>
+        </div>
+
+      </div>
+
+
+      <div class="container" id="widgetCard"
+           *ngIf="isImageWidget(widget)">
+
+        <div class="row" id="inner">
+                  <h3>Image Widget</h3>
+        </div>
+
+        <div id="inner-image" class="row">
+          <img src="{{widget.src}}" style="border: 1px solid #fffdd0">
+        </div>
+
+      </div>
+
+
+
+      <div class="container" id="widgetCard"
+           *ngIf="isHeader1Widget(widget)">
+
+        <div class="row" id="inner">
+                  <h3>Heading Widget</h3>
+        </div>
+
+        <div class="row" id="inner">
+                  <h1>{{widget.text}}</h1>
+
+        </div>
+      </div>
+
+      <div class="container" id="widgetCard"
+           *ngIf="isHeader2Widget(widget)">
+        <div class="row" id="inner">
+                  <h3>Heading Widget</h3>
+        </div>
+        <div class="row" id="inner">
+                  <h2>{{widget.text}}</h2>
+        </div>
+      </div>
+
+
+      <div class="container" id="widgetCard"
+           *ngIf="isHeader3Widget(widget)">
+        <div class="row" id="inner">
+                  <h3>Heading Widget</h3>
+        </div>
+        <div class="row" id="inner">
+        <h3>{{widget.text}}</h3>
+        </div>
+      </div>
+
+      <div class="container" id="widgetCard"
+           *ngIf="isHeader4Widget(widget)">
+        <div class="row" id="inner">
+                  <h3>Heading Widget</h3>
+        </div>
+        <div class="row" id="inner">
+        <h4>{{widget.text}}</h4>
+        </div>
+      </div>
+
+      <div class="container" id="widgetCard"
+           *ngIf="isHeader5Widget(widget)">
+        <div class="row" id="inner">
+                  <h3>Heading Widget</h3>
+        </div>
+        <div class="row" id="inner">
+        <h5>{{widget.text}}</h5>
+        </div>
+      </div>
+
+      <div class="container" id="widgetCard"
+           *ngIf="isHeader6Widget(widget)">
+        <div class="row" id="inner">
+                  <h3>Heading Widget</h3>
+        </div>
+        <div class="row" id="inner">
+        <h6>{{widget.text}}</h6>
+        </div>
+      </div>
+
+      <div class="container" id="widgetCard"
+                 *ngIf="isOrderedListWidget(widget)">
+        <div class="row" id="inner">
+                  <h3>List Widget</h3>
+        </div>
+        <div class="row" id="inner">
+          <ol>
+            <li *ngFor="let string of widget.items.split(' ')">
+              {{string}}
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="container" id="widgetCard"
+                 *ngIf="isUnorderedListWidget(widget)">
+        <div class="row" id="inner">
+                  <h3>List Widget</h3>
+        </div>
+        <div class="row" id="inner">
+          <ul>
+            <li *ngFor="let string of widget.items.split(' ')">
+              {{string}}
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+
+    </span>
+</div>
+
+
+

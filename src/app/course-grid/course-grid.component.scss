@@ -1,0 +1,60 @@
+@media (min-width: 0) {
+  .card-deck .card {
+    flex: 0 0 calc(100% - 30px);
+  }
+}
+@media (min-width: 576px) {
+  .card-deck .card {
+    flex: 0 0 calc(100% - 30px);
+  }
+}
+@media (min-width: 768px) {
+  .card-deck .card {
+    flex: 0 0 calc(33.33333% - 30px);
+  }
+}
+@media (min-width: 992px) {
+  .card-deck .card {
+    flex: 0 0 calc(33.33333% - 30px);
+  }
+}
+@media (min-width: 1200px) {
+  .card-deck .card {
+    flex: 0 0 calc(16% - 30px);
+  }
+}
+
+.card{
+  margin-top: 15px;
+}
+
+
+.navbar{
+  background-color: #1e273d;
+  margin-bottom: 2px;
+  color: #fffdd0;
+  border-style: solid;
+  border-color: #fffdd0;
+  border-width: 2px;
+  border-top-style: none;
+
+}
+
+
+h3{
+  color: #fffdd0;
+
+}
+
+
+mdb-card{
+  border-style: solid;
+  border-color: #fffdd0;
+  border-width: 2px;
+
+
+}
+
+i{
+  visibility: hidden;
+}
