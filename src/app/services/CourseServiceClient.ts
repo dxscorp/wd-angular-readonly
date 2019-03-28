@@ -3,7 +3,7 @@ export class CourseServiceClient {
 
   findAllCourses = () =>
     fetch
-    (API_URL+ 'allcourse')
+    (API_URL + 'allcourse')
       .then(response => response.json());
 
 

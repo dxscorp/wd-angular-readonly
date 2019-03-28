@@ -38,9 +38,9 @@
     "path": "^0.12.7",
     "rxjs": "^6.4.0",
     "rxjs-compat": "^6.4.0",
+    "typescript": "^3.2.1",
     "web-animations-js": "^2.3.1",
-    "zone.js": "^0.8.19",
-    "typescript": "^3.2.4"
+    "zone.js": "^0.8.19"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.13.6",
