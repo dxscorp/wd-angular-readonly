@@ -18,37 +18,23 @@ export class CourseNavigatorComponent implements OnInit {
 
   course: {};
   courseTitle: "";
-  subscription;
   courseId = 0;
-  // modules = [];
-  // lessons = [];
-  // topics = [];
-  // widgets = [];
-
-  selectedModule = {};
-  selectedLesson = {};
-  selectedTopic = {};
 
 
 
-  // selectTopic = topic => {
-  //   this.selectedTopic = topic;
-  //   this.service
-  //     .findWidgetsForTopic(topic.id)
-  //     .then(widgets => this.widgets = widgets)
-  // };
+
+
 
   ngOnInit() {
-    //
-    // this.service
-    //   .findModulesForCourse(this.courseId)
-      // .then(modules => this.modules = modules)
-      // .then(() => (this.modules.length >= 1 ? this.selectModule(this.modules[0]) : {}))
+
   }
 
   loadCourse(courseId){
     this.service.findCourseById(courseId)
-      .then(course => this.course = course);
+      .then(course => {
+        this.course = course;
+        this.courseTitle = course.title;
+      });
 
   }
 
