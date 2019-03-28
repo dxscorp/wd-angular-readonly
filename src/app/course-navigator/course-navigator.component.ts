@@ -16,7 +16,8 @@ export class CourseNavigatorComponent implements OnInit {
 
   }
 
-  course: {}
+  course: {};
+  courseTitle: "";
   subscription;
   courseId = 0;
   // modules = [];
@@ -38,8 +39,6 @@ export class CourseNavigatorComponent implements OnInit {
   // };
 
   ngOnInit() {
-
-
     //
     // this.service
     //   .findModulesForCourse(this.courseId)
@@ -50,6 +49,7 @@ export class CourseNavigatorComponent implements OnInit {
   loadCourse(courseId){
     this.service.findCourseById(courseId)
       .then(course => this.course = course);
+
   }
 
 
